@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark" />
 <title>The Magic of Reality — Keajaiban yang Sesungguhnya</title>
-<meta name="description" content="Ringkasan naratif buku The Magic of Reality karya Richard Dawkins. Setiap bagian membuka pertanyaan memikat dan menjawabnya dengan sains—sebagaimana di buku—untuk menumbuhkan rasa ingin tahu." />
+<meta name="description" content="Ringkasan naratif buku The Magic of Reality karya Richard Dawkins. Setiap bagian menjelaskan dulu, lalu menimbulkan pertanyaan pemantik rasa ingin tahu yang dijawab tuntas di buku." />
 <meta name="author" content="Richard Dawkins" />
 <meta property="og:title" content="The Magic of Reality — Keajaiban yang Sesungguhnya" />
-<meta property="og:description" content="Pertanyaan besar tentang realitas, evolusi, atom, musim, matahari, pelangi, Big Bang, gempa, mukjizat—dijawab seperti dalam buku. Temukan keajaiban yang benar-benar nyata." />
+<meta property="og:description" content="Dari mitos ke sains: realitas, evolusi, atom, musim, matahari, pelangi, Big Bang, gempa, mukjizat. Penjelasan dulu, pertanyaan di akhir." />
 <meta property="og:type" content="article" />
 <meta property="og:locale" content="id_ID" />
 <style>
@@ -19,9 +19,7 @@
   --c11:#F59E0B;--c12:#8B5CF6;--c13:#0EA5A4
 }
 @media (prefers-color-scheme: dark){
-  :root{
-    --bg:#0F0F0F;--paper:#0F0F0F;--ink:#E0E0E0;--muted:#9A9A9A;--hair:#2A2A2A;--accent:#5B8DE1
-  }
+  :root{--bg:#0F0F0F;--paper:#0F0F0F;--ink:#E0E0E0;--muted:#9A9A9A;--hair:#2A2A2A;--accent:#5B8DE1}
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -43,14 +41,12 @@ svg{stroke-linecap:round;stroke-linejoin:round}
 .t1 .icon{stroke:var(--c1)}.t2 .icon{stroke:var(--c2)}.t3 .icon{stroke:var(--c3)}.t4 .icon{stroke:var(--c4)}
 .t5 .icon{stroke:var(--c5)}.t6 .icon{stroke:var(--c6)}.t7 .icon{stroke:var(--c7)}.t8 .icon{stroke:var(--c8)}
 .t9 .icon{stroke:var(--c9)}.t10 .icon{stroke:var(--c10)}.t11 .icon{stroke:var(--c11)}.t12 .icon{stroke:var(--c12)}.t13 .icon{stroke:var(--c13)}
+.teaser{margin-top:.5rem;font-size:.98rem;color:var(--muted);font-style:italic}
 ::selection{background:color-mix(in srgb,var(--accent) 20%,transparent)}
 @media print{body{font-size:12pt}.wrapper{padding:0}article{border:none}}
-.btnBuy{display:inline-block;margin-top:2rem;padding:.75rem 1.25rem;font-size:1rem;font-weight:500;color:#fff;background:var(--accent);border-radius:.5rem;text-decoration:none;transition:background .2s ease}
+.btnBuy{display:block;margin:3rem auto 0 auto;padding:.95rem 1.75rem;max-width:420px;width:100%;font-size:1rem;font-weight:600;color:#fff;background:var(--accent);border-radius:.65rem;text-decoration:none;text-align:center;letter-spacing:.2px;transition:transform .06s ease, background .2s ease}
 .btnBuy:hover{background:#1d3f80}
-.ctaBar{position:sticky;bottom:0;background:color-mix(in srgb, var(--paper) 88%, transparent);backdrop-filter:saturate(160%) blur(8px);border-top:1px solid var(--hair);padding:1rem 1.25rem;margin-top:3rem;display:flex;gap:.75rem;align-items:center;justify-content:space-between}
-.ctaText{font-size:.95rem;color:var(--muted)}
-.ctaActions a{margin-left:.5rem}
-.badge{display:inline-block;font-size:.8rem;padding:.15rem .5rem;border:1px solid var(--hair);border-radius:.4rem;color:var(--muted)}
+.btnBuy:active{transform:translateY(1px)}
 </style>
 </head>
 <body>
@@ -61,126 +57,131 @@ svg{stroke-linecap:round;stroke-linejoin:round}
   </header>
 
   <article role="article">
-    <section id="pendahuluan" class="t1" aria-labelledby="q1">
-      <h2 id="q1">Apa yang dimaksud “keajaiban” dalam realitas?</h2>
+    <section id="pendahuluan" class="t1" aria-labelledby="s1">
+      <h2 id="s1">Keajaiban yang Tersembunyi dalam Kenyataan</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M5.6 18.4l2.1-2.1M12 18v3M16.3 7.7l2.1-2.1M18 12h3M16.3 16.3l2.1 2.1"/></svg>
       </div>
-      <p>Bagi Dawkins, ada tiga jenis “sihir”: supranatural (mitos), panggung (trik), dan “sihir puitis”—rasa takjub yang timbul ketika sains menjelaskan dunia. Buku ini menunjukkan bahwa pengetahuan memperkuat kekaguman, bukan mematikannya.</p>
+      <p>Buku ini merayakan “sihir puitis”: rasa takjub yang muncul justru ketika sains berhasil menjelaskan dunia. Dawkins menaruh mitos dan sains berdampingan—bukan untuk meremehkan mitos, melainkan untuk menunjukkan betapa realitas yang bisa diuji jauh lebih memesona.</p>
+      <p class="teaser">Jika sains bisa memukau tanpa mantra, <em>keajaiban</em> seperti apa yang sebenarnya sedang kita saksikan?</p>
     </section>
 
-    <section id="realitas" class="t2" aria-labelledby="q2">
-      <h2 id="q2">Apa itu realitas, dan bagaimana kita mengetahuinya?</h2>
+    <section id="realitas" class="t2" aria-labelledby="s2">
+      <h2 id="s2">Apa Itu Realitas, dan Bagaimana Kita Mengetahuinya?</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 20l8-8M12 12l6-6M10 14l2 2M16 8l2 2"/><path d="M3 21h4l14-14-4-4L3 21z"/></svg>
       </div>
-      <p>Realitas mencakup segala yang ada—baik yang langsung kita rasakan maupun yang hanya terdeteksi lewat instrumen. Sains menggabungkan observasi, logika, dan pengujian berulang untuk memisahkan yang benar dari yang sekadar tampak.</p>
+      <p>Realitas mencakup yang kasatmata dan yang tersembunyi—dari bakteri hingga galaksi jauh. Sains memadukan observasi, penalaran, dan pengujian berulang untuk memilah kebenaran dari ilusi. Di sini, rasa ingin tahu adalah alat, skeptisisme adalah rem, dan eksperimen adalah pengadilan terakhir.</p>
+      <p class="teaser">Jika alat kita makin tajam, seberapa jauh batas “yang nyata” bisa bergeser?</p>
     </section>
 
-    <section id="manusiaPertama" class="t3" aria-labelledby="q3">
-      <h2 id="q3">Siapa “manusia pertama” itu?</h2>
+    <section id="manusia-pertama" class="t3" aria-labelledby="s3">
+      <h2 id="s3">Ketika “Manusia Pertama” Tak Pernah Ada</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M7 7a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z"/><path d="M4 21v-1a5 5 0 0 1 5-5h.5"/><path d="M14 7h2m-1 0v4m-9 4h3"/></svg>
       </div>
-      <p>Tidak pernah ada satu momen ketika “kera berubah jadi manusia”. Evolusi bersifat gradual; setiap generasi nyaris sama dengan orang tuanya. Jika ditarik cukup jauh, garis keturunan kita bertemu leluhur bersama dengan simpanse—ini didukung fosil dan bukti DNA.</p>
+      <p>Evolusi tidak melompat. Setiap anak hampir identik dengan orang tuanya; perbedaan kecil menumpuk selama jutaan tahun. Ditelusuri cukup jauh, garis kita bertemu leluhur bersama simpanse—dan lebih jauh lagi, ikan. Fosil dan DNA menegaskan kontinuitas halus ini.</p>
+      <p class="teaser">Jika tidak ada “si pertama”, di titik mana nenek moyang “bukan manusia” berubah menjadi “manusia” menurut sains?</p>
     </section>
 
-    <section id="keanekaragaman" class="t4" aria-labelledby="q4">
-      <h2 id="q4">Mengapa spesies di Bumi begitu beragam?</h2>
+    <section id="keanekaragaman" class="t4" aria-labelledby="s4">
+      <h2 id="s4">Pohon Kehidupan dan Ledakan Keanekaragaman</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 21V6"/><path d="M12 10c2-2 4-3 6-3"/><path d="M12 14c-2-2-4-3-6-3"/><path d="M18 7c1 1 2 2 3 4M6 11c-1 1-2 2-3 4"/></svg>
       </div>
-      <p>Pohon evolusi bercabang ketika populasi terisolasi—oleh pulau, pegunungan, gurun—lalu berevolusi terpisah. Seleksi alam menyaring sifat yang sesuai, hingga akhirnya terbentuk spesies baru yang tidak lagi saling kawin.</p>
+      <p>Ketika populasi terpisah oleh pegunungan, lautan, atau gurun, mereka berevolusi sendiri-sendiri. Seleksi alam menyaring sifat yang paling cocok, hingga lahir spesies baru yang tak lagi saling kawin—begitulah jutaan bentuk kehidupan mekar dari satu pohon besar.</p>
+      <p class="teaser">Jika spesiasi butuh isolasi, seberapa cepat lingkungan bisa “mencetak” spesies baru?</p>
     </section>
 
-    <section id="materi" class="t5" aria-labelledby="q5">
-      <h2 id="q5">Dari apa segala sesuatu tersusun?</h2>
+    <section id="materi" class="t5" aria-labelledby="s5">
+      <h2 id="s5">Dari Atom ke Quark: Bahan Baku Segalanya</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2"/><path d="M4.93 4.93l14.14 14.14"/><circle cx="12" cy="12" r="9"/></svg>
       </div>
-      <p>Semua materi tersusun dari atom—sekitar 90 unsur alami—yang bergabung menjadi molekul. Atom terdiri dari proton, neutron, elektron; lebih dalam lagi ada quark. Dunia mikroskopis ini aneh namun konsisten dengan eksperimen.</p>
+      <p>Materi tersusun dari sekitar 90 unsur alami. Atom-atom bergabung membentuk molekul; atom sendiri terdiri dari proton, neutron, elektron—dan partikel yang lebih dasar lagi, quark. Dunia ini asing, tetapi eksperimen berulang meneguhkan strukturnya yang rapi.</p>
+      <p class="teaser">Jika atom sebagian besar “kosong”, mengapa benda terasa padat saat kita menyentuhnya?</p>
     </section>
 
-    <section id="siangMalam" class="t6" aria-labelledby="q6">
-      <h2 id="q6">Mengapa terjadi siang–malam dan musim?</h2>
+    <section id="siang-malam" class="t6" aria-labelledby="s6">
+      <h2 id="s6">Rotasi, Kemiringan, dan Tari Musim</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8"/><path d="M2 12h20"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
       </div>
-      <p>Siang–malam muncul karena rotasi Bumi. Musim terjadi karena sumbu Bumi miring ≈23,5°, membuat sudut datang sinar berubah sepanjang tahun—bukan karena Bumi lebih dekat atau jauh dari Matahari.</p>
+      <p>Siang–malam lahir dari rotasi Bumi; musim dari kemiringan sumbu sekitar 23,5°. Sudut datang cahaya berubah sepanjang tahun, mengatur suhu, angin, dan hujan. Penjelasan sederhana ini melampaui kisah dewa yang menyeret Matahari melintasi langit.</p>
+      <p class="teaser">Jika musim ditentukan sumbu, mengapa di khatulistiwa nyaris tak ada musim—dan di kutub justru ekstrem?</p>
     </section>
 
-    <section id="matahari" class="t7" aria-labelledby="q7">
-      <h2 id="q7">Apa sebenarnya Matahari itu?</h2>
+    <section id="matahari" class="t7" aria-labelledby="s7">
+      <h2 id="s7">Matahari: Pabrik Energi Bintang</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
       </div>
-      <p>Sebuah bintang: bola gas raksasa yang menyalakan energi lewat fusi nuklir (hidrogen menjadi helium). Unsur berat di tubuh kita ditempa di bintang-bintang generasi sebelumnya dan tersebar oleh supernova.</p>
+      <p>Matahari adalah bintang yang menyalakan hidup melalui fusi nuklir—hidrogen melebur menjadi helium, melepaskan energi yang menghangatkan Bumi. Unsur berat tubuh kita ditempa di bintang-bintang purba dan disebar oleh supernova.</p>
+      <p class="teaser">Jika Matahari “membakar” hidrogen miliaran tahun, apa yang akan terjadi ketika bahan bakarnya menipis?</p>
     </section>
 
-    <section id="pelangi" class="t8" aria-labelledby="q8">
-      <h2 id="q8">Bagaimana pelangi terbentuk?</h2>
+    <section id="pelangi" class="t8" aria-labelledby="s8">
+      <h2 id="s8">Pelangi: Geometri Cahaya di Langit</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 17a9 9 0 0 1 18 0"/><path d="M6 17a6 6 0 0 1 12 0"/><path d="M9 17a3 3 0 0 1 6 0"/></svg>
       </div>
-      <p>Pelangi adalah geometri cahaya: tetes hujan membiaskan dan memantulkan cahaya Matahari sehingga memisahkan spektrum warna, persis seperti prisma pada eksperimen Newton.</p>
+      <p>Pelangi muncul saat jutaan tetes air membiaskan dan memantulkan cahaya Matahari, memisahkan spektrum seperti prisma kecil. Newton menunjukkan bahwa “putih” adalah campuran banyak warna—hukum optika menjahit indahnya busur itu.</p>
+      <p class="teaser">Jika pelangi “ada” karena sudut pandang, mengapa dua orang berdampingan melihat pelangi yang tampak sama—padahal tidak identik?</p>
     </section>
 
-    <section id="awalSemesta" class="t9" aria-labelledby="q9">
-      <h2 id="q9">Kapan dan bagaimana alam semesta bermula?</h2>
+    <section id="awal-semesta" class="t9" aria-labelledby="s9">
+      <h2 id="s9">Big Bang: Awal Ruang dan Waktu</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 12l6-6M12 12l-6-6M12 12l6 6M12 12l-6 6"/><circle cx="12" cy="12" r="1.5"/></svg>
       </div>
-      <p>Teori Big Bang: sekitar 13,8 miliar tahun lalu, ruang dan waktu mengembang dari keadaan sangat padat dan panas. Buktinya antara lain pergeseran merah galaksi jauh—tanda ruang terus mengembang.</p>
+      <p>Alam semesta mengembang dari keadaan sangat padat dan panas sekitar 13,8 miliar tahun lalu. Bukti kuncinya: pergeseran merah galaksi jauh—ruang itu sendiri meregang. Memutar waktu ke belakang membawa kita pada satu awal yang radikal.</p>
+      <p class="teaser">Jika waktu “dimulai” saat Big Bang, apakah masuk akal bertanya apa yang terjadi <em>sebelumnya</em>?</p>
     </section>
 
-    <section id="alien" class="t10" aria-labelledby="q10">
-      <h2 id="q10">Apakah kita sendirian di alam semesta?</h2>
+    <section id="alien" class="t10" aria-labelledby="s10">
+      <h2 id="s10">Apakah Kita Sendirian?</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5"/><path d="M9 12h6M12 17v4"/><path d="M4 12a8 8 0 0 1 16 0"/></svg>
       </div>
-      <p>Belum ada bukti kunjungan alien. Sebagian klaim dapat dijelaskan (mis. kelumpuhan tidur). Namun dengan begitu banyak bintang dan planet “zona Goldilocks”, keberadaan kehidupan di tempat lain tetap masuk akal secara probabilistik.</p>
+      <p>Belum ada bukti kunjungan alien. Banyak klaim punya penjelasan psikologis atau fisik (misalnya kelumpuhan tidur). Namun secara probabilistik, dengan miliaran galaksi dan planet “zona Goldilocks”, kehidupan lain tetap mungkin.</p>
+      <p class="teaser">Jika peluangnya tinggi, mengapa kita belum melihat tanda-tandanya? (Halo, Paradoks Fermi.)</p>
     </section>
 
-    <section id="gempa" class="t11" aria-labelledby="q11">
-      <h2 id="q11">Apa penyebab gempa bumi?</h2>
+    <section id="gempa" class="t11" aria-labelledby="s11">
+      <h2 id="s11">Gempa: Ketika Lempeng Melepaskan Tegangan</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M2 18h20"/><path d="M4 18l3-6 2 4 2-5 2 7 2-4 3 4"/></svg>
       </div>
-      <p>Kerak Bumi terdiri dari lempeng yang bergerak di atas mantel panas. Tekanan menumpuk di batas lempeng; jika dilepas mendadak, terbentuk gelombang seismik yang kita rasakan sebagai gempa.</p>
+      <p>Kerak Bumi terbagi menjadi lempeng tektonik yang bergerak di atas mantel panas. Tegangan menumpuk di batas lempeng; saat lepas mendadak, gelombang seismik merambat sebagai gempa. Sederhana, keras kepala, dan tak peduli pada kosmologi moral kita.</p>
+      <p class="teaser">Jika gempa tak terelakkan, apa saja tanda awal dan batas kemampuan kita untuk memprediksinya?</p>
     </section>
 
-    <section id="penderitaan" class="t12" aria-labelledby="q12">
-      <h2 id="q12">Mengapa hal-hal buruk terjadi?</h2>
+    <section id="penderitaan" class="t12" aria-labelledby="s12">
+      <h2 id="s12">Mengapa Hal Buruk Terjadi?</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M9 12a3 3 0 1 1 6 0v1"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>
       </div>
-      <p>Kita suka mencari “keadilan kosmis”, tetapi alam tidak punya niat baik atau jahat. Banyak penderitaan lahir dari hukum fisika, biologi, dan probabilitas—kesadaran ini mengarahkan empati pada solusi nyata, bukan pada kesalahan atribusi.</p>
+      <p>Kecenderungan kita mencari “keadilan kosmis” membuat alam tampak berniat baik atau jahat. Sains mengingatkan: banyak peristiwa adalah konsekuensi hukum fisika, biologi, dan probabilitas. Sikap ini tidak menciutkan empati—justru menajamkan solusi nyata.</p>
+      <p class="teaser">Jika alam netral, bagaimana seharusnya kita merancang keadilan yang benar-benar bekerja?</p>
     </section>
 
-    <section id="mukjizat" class="t13" aria-labelledby="q13">
-      <h2 id="q13">Apa itu mukjizat—dan kapan layak dipercaya?</h2>
+    <section id="mukjizat" class="t13" aria-labelledby="s13">
+      <h2 id="s13">Mukjizat: Standar Bukti yang Jujur</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M2 12h20"/><path d="M12 2v20"/><circle cx="12" cy="12" r="9"/></svg>
       </div>
-      <p>Mukjizat didefinisikan sebagai pelanggaran hukum alam. Mengikuti Hume, klaim semacam ini baru masuk akal jika kesalahan dalam kesaksiannya lebih tidak mungkin daripada peristiwa yang diklaim. Banyak “mukjizat” runtuh menjadi salah paham, kebetulan, atau penipuan.</p>
+      <p>Mukjizat didefinisikan sebagai pelanggaran hukum alam. Mengikuti Hume, klaim semacam itu baru masuk akal jika kesalahan dalam kesaksiannya lebih tidak mungkin daripada peristiwa yang diklaim. Banyak narasi “ajaib” runtuh menjadi kebetulan, bias, atau rekayasa.</p>
+      <p class="teaser">Jika standar bukti kita longgar, berapa banyak “keajaiban” palsu yang lolos tanpa kita sadar?</p>
     </section>
 
-    <section id="penutup" class="t1" aria-labelledby="q14">
-      <h2 id="q14">Jadi, di mana letak keajaiban yang sesungguhnya?</h2>
+    <section id="penutup" class="t1" aria-labelledby="s14">
+      <h2 id="s14">Di Mana Letak Keajaiban yang Sesungguhnya?</h2>
       <div class="figure" aria-hidden="true">
         <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 6h7a4 4 0 0 1 4 4v11a4 4 0 0 0-4-4H3z"/><path d="M21 6h-7a4 4 0 0 0-4 4v11a4 4 0 0 1 4-4h7z"/></svg>
       </div>
-      <p>Keindahan yang dapat diuji—bahwa kita lahir dari bintang, berbagi leluhur dengan semua makhluk, dan hidup di kosmos yang mengembang—adalah kisah paling memukau karena benar. Jika ingin menyelami ilustrasi, eksperimen sederhana, dan penjelasan lengkapnya, baca naskah aslinya.</p>
+      <p>Keindahan yang dapat diuji—kita lahir dari debu bintang, berbagi leluhur dengan semua makhluk, hidup di kosmos yang mengembang—adalah kisah paling memukau karena benar. Buku ini menyajikan ilustrasi, eksperimen sederhana, dan cerita lengkap yang memuaskan rasa ingin tahu sampai tuntas.</p>
       <a href="https://s.shopee.co.id/AA7R0G9M2z" class="btnBuy" target="_blank" rel="noopener">Beli Buku Asli di Shopee</a>
-      <div class="badge">Link afiliasi</div>
     </section>
-
-    <div class="ctaBar" role="complementary" aria-label="Bar pembelian">
-      <div class="ctaText">Suka pertanyaannya? Jawaban lengkap, ilustrasi, dan eksperimen ada di buku aslinya.</div>
-      <div class="ctaActions">
-        <a href="https://s.shopee.co.id/AA7R0G9M2z" class="btnBuy" target="_blank" rel="noopener">Beli via Shopee</a>
-      </div>
-    </div>
   </article>
 </div>
 </body>
