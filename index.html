@@ -4,184 +4,197 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark" />
-<title>The Magic of Reality — Keajaiban yang Sesungguhnya</title>
-<meta name="description" content="Ringkasan naratif buku The Magic of Reality karya Richard Dawkins. Setiap bagian menjelaskan dulu, lalu menimbulkan pertanyaan pemantik rasa ingin tahu yang dijawab tuntas di buku." />
-<meta name="author" content="Richard Dawkins" />
-<meta property="og:title" content="The Magic of Reality — Keajaiban yang Sesungguhnya" />
-<meta property="og:description" content="Dari mitos ke sains: realitas, evolusi, atom, musim, matahari, pelangi, Big Bang, gempa, mukjizat. Penjelasan dulu, pertanyaan di akhir." />
+<title>Ringkasan Buku Humankind: A Hopeful History</title>
+<meta name="description" content="Ringkasan lengkap Humankind oleh Rutger Bregman: gagasan radikal tentang kebaikan manusia, pembongkaran mitos, sains sosial, kritik eksperimen psikologi, hingga jalan menuju realisme baru berbasis kepercayaan." />
+<meta name="author" content="Rutger Bregman" />
+<meta property="og:title" content="Ringkasan Buku Humankind: A Hopeful History" />
+<meta property="og:description" content="Argumen Bregman: mayoritas manusia pada dasarnya baik—dan implikasinya bagi sekolah, perusahaan, dan demokrasi." />
 <meta property="og:type" content="article" />
 <meta property="og:locale" content="id_ID" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg:#FFFFFF;--paper:#FFFFFF;--ink:#1A1A1A;--muted:#757575;--hair:#EAEAEA;--accent:#2E5AAC;
-  --c1:#5B67D6;--c2:#0FA3B1;--c3:#F59E0B;--c4:#E15554;--c5:#7C3AED;
-  --c6:#10B981;--c7:#D97706;--c8:#F43F5E;--c9:#6366F1;--c10:#06B6D4;
-  --c11:#F59E0B;--c12:#8B5CF6;--c13:#0EA5A4
+  --bg:#f4f6f8;
+  --paper:#ffffff;
+  --ink:#1A1A1A;
+  --muted:#757575;
+  --hair:#E6E8EB;
+  --accent:#336699;
+  --hope:#3e8ef7;
+  --myth:#ffb020;
+  --science:#7c5cfc;
+  --psych:#2d7ff9;
+  --power:#e14d72;
+  --reform:#12b886;
+  --close:#4cbd87;
 }
 @media (prefers-color-scheme: dark){
-  :root{--bg:#0F0F0F;--paper:#0F0F0F;--ink:#E0E0E0;--muted:#9A9A9A;--hair:#2A2A2A;--accent:#5B8DE1}
+  :root{
+    --bg:#0d0f12;
+    --paper:#121417;
+    --ink:#E0E0E0;
+    --muted:#999999;
+    --hair:#22262b;
+  }
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,Arial,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,Arial,sans-serif;
+  font-size:16px; line-height:1.8;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
 .wrapper{max-width:680px;margin-inline:auto;padding:4rem 1.5rem}
 header{margin-bottom:3rem;text-align:left}
 h1{font-size:1.8rem;font-weight:600;line-height:1.25;letter-spacing:-0.02em;margin:0 0 .5rem 0;text-wrap:balance}
 .byline{font-size:.9rem;color:var(--muted)}
 .byline strong{font-weight:500;color:var(--ink)}
-article{background:var(--paper)}
-section+section{margin-top:2.5rem}
-h2{font-size:1.2rem;font-weight:600;line-height:1.4;margin:2rem 0 1rem 0;padding-bottom:.5rem;border-bottom:1px solid var(--hair);text-align:left}
-p{margin:0 0 1.25rem 0;font-size:1.05rem;text-wrap:pretty;text-align:left}
-p:last-of-type{margin-bottom:0}
-.figure{display:flex;justify-content:left;margin:1.25rem 0 1rem 0}
-.icon{width:100%;max-width:48px;height:auto;stroke-width:1.6px;opacity:.95}
-svg{stroke-linecap:round;stroke-linejoin:round}
-.t1 .icon{stroke:var(--c1)}.t2 .icon{stroke:var(--c2)}.t3 .icon{stroke:var(--c3)}.t4 .icon{stroke:var(--c4)}
-.t5 .icon{stroke:var(--c5)}.t6 .icon{stroke:var(--c6)}.t7 .icon{stroke:var(--c7)}.t8 .icon{stroke:var(--c8)}
-.t9 .icon{stroke:var(--c9)}.t10 .icon{stroke:var(--c10)}.t11 .icon{stroke:var(--c11)}.t12 .icon{stroke:var(--c12)}.t13 .icon{stroke:var(--c13)}
-.teaser{margin-top:.5rem;font-size:.98rem;color:var(--muted);font-style:italic}
-::selection{background:color-mix(in srgb,var(--accent) 20%,transparent)}
-@media print{body{font-size:12pt}.wrapper{padding:0}article{border:none}}
-.btnBuy{display:block;margin:3rem auto 0 auto;padding:.95rem 1.75rem;max-width:420px;width:100%;font-size:1rem;font-weight:600;color:#fff;background:var(--accent);border-radius:.65rem;text-decoration:none;text-align:center;letter-spacing:.2px;transition:transform .06s ease, background .2s ease}
-.btnBuy:hover{background:#1d3f80}
-.btnBuy:active{transform:translateY(1px)}
+article{background:transparent}
+h2{
+  font-size:1.2rem;font-weight:600;line-height:1.4;
+  margin:2rem 0 .75rem 0; padding-bottom:.5rem; border-bottom:1px solid var(--hair);
+  text-align:left;
+}
+p{margin:0 0 1.25rem 0; font-size:1.05rem; text-wrap:pretty; text-align:left}
+ul{margin:0 0 1.25rem 1.2rem; padding:0}
+li{margin:0 0 .6rem 0}
+.hi{display:flex; align-items:center; gap:.6rem}
+.hi svg{width:24px; height:24px; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round}
+.iconHope{stroke:var(--hope)}
+.iconMyth{stroke:var(--myth)}
+.iconScience{stroke:var(--science)}
+.iconPsych{stroke:var(--psych)}
+.iconPower{stroke:var(--power)}
+.iconReform{stroke:var(--reform)}
+.iconClose{stroke:var(--close)}
+.buyLink{
+  display:flex; align-items:center; justify-content:center; gap:.5rem;
+  width:100%; padding:.9rem 1.2rem; margin-top:2rem;
+  background:var(--accent); color:#fff;
+  font-size:1rem; font-weight:500; text-decoration:none;
+  border-radius:10px; text-align:center;
+  transition:transform .12s ease, background .25s ease;
+}
+.buyLink svg{width:22px; height:22px; stroke:#fff; stroke-width:2; fill:none}
+.buyLink:hover{
+  background:color-mix(in srgb, var(--accent) 85%, black 15%);
+  transform:translateY(-1px);
+}
+::selection{background:color-mix(in srgb, var(--accent) 20%, transparent)}
+@media print{
+  body{font-size:12pt; background:#fff}
+  .wrapper{padding:0}
+}
 </style>
 </head>
 <body>
 <div class="wrapper">
   <header role="banner">
-    <h1>The Magic of Reality: Keajaiban yang Tersembunyi dalam Kenyataan</h1>
-    <div class="byline">Penulis: <strong>Richard Dawkins</strong></div>
+    <h1>Ringkasan Buku <em>Humankind: A Hopeful History</em></h1>
+    <div class="byline">Penulis: <strong>Rutger Bregman</strong></div>
   </header>
 
   <article role="article">
-    <section id="pendahuluan" class="t1" aria-labelledby="s1">
-      <h2 id="s1">Keajaiban yang Tersembunyi dalam Kenyataan</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M5.6 18.4l2.1-2.1M12 18v3M16.3 7.7l2.1-2.1M18 12h3M16.3 16.3l2.1 2.1"/></svg>
-      </div>
-      <p>Buku ini merayakan “sihir puitis”: rasa takjub yang muncul justru ketika sains berhasil menjelaskan dunia. Dawkins menaruh mitos dan sains berdampingan—bukan untuk meremehkan mitos, melainkan untuk menunjukkan betapa realitas yang bisa diuji jauh lebih memesona.</p>
-      <p class="teaser">Jika sains bisa memukau tanpa mantra, <em>keajaiban</em> seperti apa yang sebenarnya sedang kita saksikan?</p>
-    </section>
+    <h2 class="hi">
+      <svg class="iconHope" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" />
+      </svg>
+      Pendahuluan: Sebuah Gagasan Radikal
+    </h2>
+    <p>Buku ini diawali dengan pertanyaan yang menantang pandangan umum: bagaimana jika keyakinan bahwa manusia pada dasarnya egois, jahat, dan hanya memikirkan diri sendiri adalah keliru? Bregman mengajukan gagasan radikal yang menjadi inti buku ini: bahwa pada dasarnya, sebagian besar manusia itu baik.</p>
+    <p>Gagasan ini berlawanan dengan <em>teori veneer</em>, yakni anggapan bahwa peradaban hanyalah lapisan tipis yang menutupi sifat asli manusia yang brutal. Menurut teori ini, jika terjadi krisis—bencana alam atau perang—lapisan tersebut retak dan sifat buas muncul. Bregman berargumen sebaliknya. Dengan data sejarah, psikologi, dan arkeologi, ia menunjukkan bahwa justru saat krisis, sifat terbaik manusia—altruisme, kerja sama, dan solidaritas—muncul ke permukaan.</p>
+    <p>Ia juga memperkenalkan konsep “efek nocebo” sosial. Seperti plasebo yang menyembuhkan karena keyakinan positif, nocebo menimbulkan efek negatif karena keyakinan negatif. Pandangan sinis terhadap sesama bekerja seperti nocebo: jika kita menganggap orang lain tak bisa dipercaya, kita membangun sistem berbasis kecurigaan—di pemerintahan, perusahaan, sekolah—yang akhirnya mendorong perilaku egois. Buku ini adalah ajakan beralih ke “realisme baru” yang lebih berpengharapan.</p>
 
-    <section id="realitas" class="t2" aria-labelledby="s2">
-      <h2 id="s2">Apa Itu Realitas, dan Bagaimana Kita Mengetahuinya?</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 20l8-8M12 12l6-6M10 14l2 2M16 8l2 2"/><path d="M3 21h4l14-14-4-4L3 21z"/></svg>
-      </div>
-      <p>Realitas mencakup yang kasatmata dan yang tersembunyi—dari bakteri hingga galaksi jauh. Sains memadukan observasi, penalaran, dan pengujian berulang untuk memilah kebenaran dari ilusi. Di sini, rasa ingin tahu adalah alat, skeptisisme adalah rem, dan eksperimen adalah pengadilan terakhir.</p>
-      <p class="teaser">Jika alat kita makin tajam, seberapa jauh batas “yang nyata” bisa bergeser?</p>
-    </section>
+    <p>Buku ini lalu membongkar mitos-mitos populer tentang “keburukan manusia”, menelaah sains tentang sifat dasar kita, mengkritik eksperimen psikologi klasik, dan merumuskan jalan praktis untuk merancang institusi berbasis kepercayaan.</p>
 
-    <section id="manusia-pertama" class="t3" aria-labelledby="s3">
-      <h2 id="s3">Ketika “Manusia Pertama” Tak Pernah Ada</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M7 7a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z"/><path d="M4 21v-1a5 5 0 0 1 5-5h.5"/><path d="M14 7h2m-1 0v4m-9 4h3"/></svg>
-      </div>
-      <p>Evolusi tidak melompat. Setiap anak hampir identik dengan orang tuanya; perbedaan kecil menumpuk selama jutaan tahun. Ditelusuri cukup jauh, garis kita bertemu leluhur bersama simpanse—dan lebih jauh lagi, ikan. Fosil dan DNA menegaskan kontinuitas halus ini.</p>
-      <p class="teaser">Jika tidak ada “si pertama”, di titik mana nenek moyang “bukan manusia” berubah menjadi “manusia” menurut sains?</p>
-    </section>
+    <h2 class="hi">
+      <svg class="iconMyth" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7" />
+        <circle cx="12" cy="12" r="3" />
+        <path d="M3 3l18 18" />
+      </svg>
+      1) Membongkar Mitos Terkenal
+    </h2>
+    <p><strong>Kisah Nyata “Lord of the Flies”.</strong> Novel William Golding menggambarkan anak-anak yang terdampar menjadi buas. Bregman menemukan kisah nyata tahun 1965: enam anak laki-laki dari Tonga terdampar di pulau ’Ata selama 15 bulan. Alih-alih saling melukai, mereka justru bekerja sama: membuat jadwal kerja, membangun kebun, menjaga api agar menyala, dan menyelesaikan konflik dengan <em>time-out</em>. Kisah mereka adalah cerita tentang persahabatan dan ketahanan—antitesis dari fiksi Golding.</p>
+    <p><strong>Mitos Pembantaian di Pulau Paskah.</strong> Narasi populer menyebut peradaban Pulau Paskah hancur karena keserakahan: pohon ditebang demi patung Moai, lalu perang saudara dan kanibalisme. Bregman menunjukkan bukti ilmiah modern yang membantah narasi ini. Keruntuhan bukan akibat perang internal, melainkan kedatangan orang Eropa yang membawa penyakit mematikan dan perbudakan. Penduduk setempat justru menunjukkan ketangguhan dan kecerdikan.</p>
 
-    <section id="keanekaragaman" class="t4" aria-labelledby="s4">
-      <h2 id="s4">Pohon Kehidupan dan Ledakan Keanekaragaman</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 21V6"/><path d="M12 10c2-2 4-3 6-3"/><path d="M12 14c-2-2-4-3-6-3"/><path d="M18 7c1 1 2 2 3 4M6 11c-1 1-2 2-3 4"/></svg>
-      </div>
-      <p>Ketika populasi terpisah oleh pegunungan, lautan, atau gurun, mereka berevolusi sendiri-sendiri. Seleksi alam menyaring sifat yang paling cocok, hingga lahir spesies baru yang tak lagi saling kawin—begitulah jutaan bentuk kehidupan mekar dari satu pohon besar.</p>
-      <p class="teaser">Jika spesiasi butuh isolasi, seberapa cepat lingkungan bisa “mencetak” spesies baru?</p>
-    </section>
+    <h2 class="hi">
+      <svg class="iconScience" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M10 2h4" />
+        <path d="M12 2v6l5 8a3 3 0 0 1-2.6 4H9.6A3 3 0 0 1 7 16l5-8" />
+      </svg>
+      2) Sifat Dasar Manusia Menurut Sains
+    </h2>
+    <p><strong>Homo Puppy.</strong> Mengapa <em>Homo sapiens</em> bertahan, bukan Neanderthal yang berotak lebih besar? Jawabannya: <em>survival of the friendliest</em>. Manusia mengalami “domestikasi diri”, mirip anjing dari serigala: lebih ramah, lebih sosial, wajah lebih juvenil—karena itu dijuluki “Homo puppy”. Kemampuan belajar sosial dan bekerja sama dalam kelompok besar adalah kekuatan super evolutif kita.</p>
+    <p><strong>Awal Mula Perang dan Ketidaksetaraan.</strong> Jika manusia purba relatif egaliter sebagai pemburu-pengumpul, mengapa kini banyak perang dan hierarki? Mengikuti jejak Rousseau, Bregman menempatkan titik balik saat manusia menetap dan mengenal kepemilikan pribadi sekitar 10.000 tahun lalu. Kepemilikan menciptakan ketidaksetaraan, dan kehidupan menetap memicu ketidakpercayaan pada orang asing. Perang bukan sifat bawaan, melainkan “penemuan” historis yang relatif baru.</p>
 
-    <section id="materi" class="t5" aria-labelledby="s5">
-      <h2 id="s5">Dari Atom ke Quark: Bahan Baku Segalanya</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2"/><path d="M4.93 4.93l14.14 14.14"/><circle cx="12" cy="12" r="9"/></svg>
-      </div>
-      <p>Materi tersusun dari sekitar 90 unsur alami. Atom-atom bergabung membentuk molekul; atom sendiri terdiri dari proton, neutron, elektron—dan partikel yang lebih dasar lagi, quark. Dunia ini asing, tetapi eksperimen berulang meneguhkan strukturnya yang rapi.</p>
-      <p class="teaser">Jika atom sebagian besar “kosong”, mengapa benda terasa padat saat kita menyentuhnya?</p>
-    </section>
+    <h2 class="hi">
+      <svg class="iconPsych" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8 6a3 3 0 0 1 3-2 3 3 0 0 1 3 3v10a3 3 0 0 1-3 3 3 3 0 0 1-3-3z" />
+        <path d="M12 4v16" />
+        <path d="M8 10h8" />
+      </svg>
+      3) Membongkar Eksperimen Psikologi Paling Terkenal
+    </h2>
+    <p><strong>Eksperimen Penjara Stanford (Philip Zimbardo).</strong> Eksperimen ini sering dikutip untuk menunjukkan mahasiswa biasa bisa cepat menjadi sadis saat berperan sebagai penjaga. Bregman mengungkap bahwa “hasil” tersebut dimanipulasi: Zimbardo dan tim aktif mendorong perilaku kejam. Ini lebih tentang otoritas yang memanipulasi, bukan spontanitas situasi. Replikasi <em>BBC Prison Study</em> yang lebih etis justru menunjukkan peserta merasa canggung dan akhirnya membentuk komune damai.</p>
+    <p><strong>Eksperimen Setrum Milgram.</strong> Narasi populer menyebut orang patuh secara buta menyiksa orang lain atas perintah otoritas. Bregman menunjukkan interpretasi yang lebih akurat: peserta tidak patuh buta; mereka sangat tertekan dan melanjutkan karena percaya terlibat dalam proyek ilmiah penting. Ketika perintah diberikan secara gamblang tanpa justifikasi “demi sains”, kepatuhan hampir hilang.</p>
+    <p><strong>Kasus Kitty Genovese dan <em>Bystander Effect</em>.</strong> Kisah 38 saksi yang hanya diam adalah fabrikasi media. Faktanya, tidak ada 38 saksi pasif; beberapa orang menelepon polisi, dan Kitty meninggal dalam pelukan tetangga yang menolongnya. Riset modern bahkan menunjukkan kebalikannya: dalam situasi darurat yang jelas, semakin banyak saksi, semakin besar peluang seseorang akan dibantu.</p>
 
-    <section id="siang-malam" class="t6" aria-labelledby="s6">
-      <h2 id="s6">Rotasi, Kemiringan, dan Tari Musim</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8"/><path d="M2 12h20"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
-      </div>
-      <p>Siang–malam lahir dari rotasi Bumi; musim dari kemiringan sumbu sekitar 23,5°. Sudut datang cahaya berubah sepanjang tahun, mengatur suhu, angin, dan hujan. Penjelasan sederhana ini melampaui kisah dewa yang menyeret Matahari melintasi langit.</p>
-      <p class="teaser">Jika musim ditentukan sumbu, mengapa di khatulistiwa nyaris tak ada musim—dan di kutub justru ekstrem?</p>
-    </section>
+    <h2 class="hi">
+      <svg class="iconPower" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+      </svg>
+      4) Mengapa Orang Baik Melakukan Hal Buruk?
+    </h2>
+    <p><strong>Sisi Gelap Empati dan Kekuatan Jarak.</strong> Kekejaman sering tidak lahir dari kebencian, melainkan empati yang salah arah. Empati bekerja seperti sorot lampu: sangat peduli pada “kita” sambil buta pada “mereka”. Di medan perang, tentara sering termotivasi oleh persahabatan (<em>kameradschaft</em>) ketimbang ideologi. Kekerasan juga lebih mudah dari jarak jauh—mengebom kota dari ketinggian lebih mudah daripada kontak dekat.</p>
+    <p><strong>Kekuasaan Merusak.</strong> Kekuasaan bekerja seperti obat bius yang merusak otak. Mereka yang berkuasa cenderung kehilangan empati, menjadi lebih impulsif, dan sinis. Ini disebut paradoks kekuasaan: kita memilih pemimpin yang ramah dan rendah hati, tetapi proses memegang kekuasaan merusak kualitas tersebut.</p>
 
-    <section id="matahari" class="t7" aria-labelledby="s7">
-      <h2 id="s7">Matahari: Pabrik Energi Bintang</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
-      </div>
-      <p>Matahari adalah bintang yang menyalakan hidup melalui fusi nuklir—hidrogen melebur menjadi helium, melepaskan energi yang menghangatkan Bumi. Unsur berat tubuh kita ditempa di bintang-bintang purba dan disebar oleh supernova.</p>
-      <p class="teaser">Jika Matahari “membakar” hidrogen miliaran tahun, apa yang akan terjadi ketika bahan bakarnya menipis?</p>
-    </section>
+    <h2 class="hi">
+      <svg class="iconReform" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 12c4-8 14-8 18 0-4 8-14 8-18 0" />
+        <path d="M12 6v12" />
+      </svg>
+      5) Jalan Menuju Realisme Baru
+    </h2>
+    <p>Di bagian akhir, Bregman menawarkan solusi praktis yang bertolak dari pandangan positif terhadap manusia. Ia menampilkan contoh institusi yang berhasil karena dibangun di atas kepercayaan, bukan kecurigaan:</p>
+    <ul>
+      <li><strong>Buurtzorg</strong> di Belanda beroperasi tanpa manajer, memberi otonomi penuh pada perawat. Hasilnya: kepuasan karyawan dan pasien tinggi dengan biaya lebih rendah.</li>
+      <li><strong>Sekolah Agora</strong> membiarkan siswa merancang kurikulum berdasarkan rasa ingin tahu. Hasilnya: siswa termotivasi dan mandiri.</li>
+      <li><strong>Anggaran partisipatif</strong> di kota-kota seperti Porto Alegre (Brasil) memberi warga kendali langsung atas sebagian anggaran kota, menurunkan korupsi, memperbaiki layanan publik, dan meningkatkan kepercayaan terhadap pemerintah.</li>
+    </ul>
+    <p><strong>Kekuatan Kontak dan Perilaku Non-Komplementer.</strong> Obat mujarab untuk prasangka adalah kontak antarkelompok—seperti yang ditunjukkan kisah Nelson Mandela di Afrika Selatan. Perilaku non-komplementer—membalas kebencian dengan kebaikan—bukan naif, melainkan strategi efektif memutus siklus kekerasan, sebagaimana ditunjukkan sistem pemasyarakatan Norwegia yang berfokus pada kemanusiaan dan rehabilitasi. Gencatan Senjata Natal 1914—saat tentara Jerman dan Inggris keluar dari parit untuk merayakan Natal bersama—menjadi bukti bahwa bahkan di tengah perang, kemanusiaan bisa menang.</p>
 
-    <section id="pelangi" class="t8" aria-labelledby="s8">
-      <h2 id="s8">Pelangi: Geometri Cahaya di Langit</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 17a9 9 0 0 1 18 0"/><path d="M6 17a6 6 0 0 1 12 0"/><path d="M9 17a3 3 0 0 1 6 0"/></svg>
-      </div>
-      <p>Pelangi muncul saat jutaan tetes air membiaskan dan memantulkan cahaya Matahari, memisahkan spektrum seperti prisma kecil. Newton menunjukkan bahwa “putih” adalah campuran banyak warna—hukum optika menjahit indahnya busur itu.</p>
-      <p class="teaser">Jika pelangi “ada” karena sudut pandang, mengapa dua orang berdampingan melihat pelangi yang tampak sama—padahal tidak identik?</p>
-    </section>
+    <h2 class="hi">
+      <svg class="iconClose" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M8 12l2.5 2.5L16 9" />
+      </svg>
+      Penutup: Sepuluh Aturan untuk Hidup
+    </h2>
+    <p>Bregman menutup dengan sepuluh aturan hidup yang merangkum praksisnya. Intinya mendorong kita untuk:</p>
+    <ul>
+      <li>Saat ragu, berasumsilah yang terbaik dari orang lain.</li>
+      <li>Pikirkan skenario menang–menang.</li>
+      <li>Hindari konsumsi berita yang berlebihan karena bias negatifnya mendistorsi pandangan tentang dunia.</li>
+      <li>Jangan malu berbuat baik—kebaikan itu menular.</li>
+      <li>Yang terpenting: jadilah realistis. Realisme sejati bukan sinisme, melainkan keberanian percaya pada kebaikan sesama manusia, karena itulah yang didukung oleh banyak bukti.</li>
+    </ul>
+    <p>Pada akhirnya, <em>Humankind</em> adalah argumen penuh harapan bahwa dengan mengubah cara pandang kita terhadap sifat dasar manusia, kita dapat membangun dunia yang lebih baik, lebih adil, dan lebih manusiawi.</p>
 
-    <section id="awal-semesta" class="t9" aria-labelledby="s9">
-      <h2 id="s9">Big Bang: Awal Ruang dan Waktu</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 12l6-6M12 12l-6-6M12 12l6 6M12 12l-6 6"/><circle cx="12" cy="12" r="1.5"/></svg>
-      </div>
-      <p>Alam semesta mengembang dari keadaan sangat padat dan panas sekitar 13,8 miliar tahun lalu. Bukti kuncinya: pergeseran merah galaksi jauh—ruang itu sendiri meregang. Memutar waktu ke belakang membawa kita pada satu awal yang radikal.</p>
-      <p class="teaser">Jika waktu “dimulai” saat Big Bang, apakah masuk akal bertanya apa yang terjadi <em>sebelumnya</em>?</p>
-    </section>
-
-    <section id="alien" class="t10" aria-labelledby="s10">
-      <h2 id="s10">Apakah Kita Sendirian?</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5"/><path d="M9 12h6M12 17v4"/><path d="M4 12a8 8 0 0 1 16 0"/></svg>
-      </div>
-      <p>Belum ada bukti kunjungan alien. Banyak klaim punya penjelasan psikologis atau fisik (misalnya kelumpuhan tidur). Namun secara probabilistik, dengan miliaran galaksi dan planet “zona Goldilocks”, kehidupan lain tetap mungkin.</p>
-      <p class="teaser">Jika peluangnya tinggi, mengapa kita belum melihat tanda-tandanya? (Halo, Paradoks Fermi.)</p>
-    </section>
-
-    <section id="gempa" class="t11" aria-labelledby="s11">
-      <h2 id="s11">Gempa: Ketika Lempeng Melepaskan Tegangan</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M2 18h20"/><path d="M4 18l3-6 2 4 2-5 2 7 2-4 3 4"/></svg>
-      </div>
-      <p>Kerak Bumi terbagi menjadi lempeng tektonik yang bergerak di atas mantel panas. Tegangan menumpuk di batas lempeng; saat lepas mendadak, gelombang seismik merambat sebagai gempa. Sederhana, keras kepala, dan tak peduli pada kosmologi moral kita.</p>
-      <p class="teaser">Jika gempa tak terelakkan, apa saja tanda awal dan batas kemampuan kita untuk memprediksinya?</p>
-    </section>
-
-    <section id="penderitaan" class="t12" aria-labelledby="s12">
-      <h2 id="s12">Mengapa Hal Buruk Terjadi?</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M9 12a3 3 0 1 1 6 0v1"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>
-      </div>
-      <p>Kecenderungan kita mencari “keadilan kosmis” membuat alam tampak berniat baik atau jahat. Sains mengingatkan: banyak peristiwa adalah konsekuensi hukum fisika, biologi, dan probabilitas. Sikap ini tidak menciutkan empati—justru menajamkan solusi nyata.</p>
-      <p class="teaser">Jika alam netral, bagaimana seharusnya kita merancang keadilan yang benar-benar bekerja?</p>
-    </section>
-
-    <section id="mukjizat" class="t13" aria-labelledby="s13">
-      <h2 id="s13">Mukjizat: Standar Bukti yang Jujur</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M2 12h20"/><path d="M12 2v20"/><circle cx="12" cy="12" r="9"/></svg>
-      </div>
-      <p>Mukjizat didefinisikan sebagai pelanggaran hukum alam. Mengikuti Hume, klaim semacam itu baru masuk akal jika kesalahan dalam kesaksiannya lebih tidak mungkin daripada peristiwa yang diklaim. Banyak narasi “ajaib” runtuh menjadi kebetulan, bias, atau rekayasa.</p>
-      <p class="teaser">Jika standar bukti kita longgar, berapa banyak “keajaiban” palsu yang lolos tanpa kita sadar?</p>
-    </section>
-
-    <section id="penutup" class="t1" aria-labelledby="s14">
-      <h2 id="s14">Di Mana Letak Keajaiban yang Sesungguhnya?</h2>
-      <div class="figure" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 6h7a4 4 0 0 1 4 4v11a4 4 0 0 0-4-4H3z"/><path d="M21 6h-7a4 4 0 0 0-4 4v11a4 4 0 0 1 4-4h7z"/></svg>
-      </div>
-      <p>Keindahan yang dapat diuji—kita lahir dari debu bintang, berbagi leluhur dengan semua makhluk, hidup di kosmos yang mengembang—adalah kisah paling memukau karena benar. Buku ini menyajikan ilustrasi, eksperimen sederhana, dan cerita lengkap yang memuaskan rasa ingin tahu sampai tuntas.</p>
-      <a href="https://s.shopee.co.id/AA7R0G9M2z" class="btnBuy" target="_blank" rel="noopener">Beli Buku Asli di Shopee</a>
-    </section>
+    <a href="https://s.shopee.co.id/40Woa6lj1k" class="buyLink" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+      </svg>
+      Beli Buku Aslinya
+    </a>
   </article>
 </div>
 </body>
