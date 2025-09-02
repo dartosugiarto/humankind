@@ -5,16 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark" />
 <title>Ringkasan Buku Humankind: A Hopeful History</title>
-<meta name="description" content="Ringkasan lengkap Humankind oleh Rutger Bregman: gagasan radikal tentang kebaikan manusia, pembongkaran mitos, sains sosial, kritik eksperimen psikologi, hingga jalan menuju realisme baru berbasis kepercayaan." />
-<meta name="author" content="Rutger Bregman" />
-<meta property="og:title" content="Ringkasan Buku Humankind: A Hopeful History" />
-<meta property="og:description" content="Argumen Bregman: mayoritas manusia pada dasarnya baik—dan implikasinya bagi sekolah, perusahaan, dan demokrasi." />
-<meta property="og:type" content="article" />
-<meta property="og:locale" content="id_ID" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Ringkasan lengkap Humankind karya Rutger Bregman: membongkar mitos manusia jahat, bukti sains tentang kebaikan, kritik eksperimen psikologi, dan jalan menuju realisme baru berbasis kepercayaan.">
+<meta name="author" content="Rutger Bregman">
+<meta property="og:title" content="Ringkasan Buku Humankind: A Hopeful History">
+<meta property="og:description" content="Argumen berani: mayoritas manusia pada dasarnya baik—serta implikasinya bagi sekolah, perusahaan, dan demokrasi.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="id_ID">
 
 <style>
 :root{
@@ -24,13 +21,12 @@
   --muted:#757575;
   --hair:#E6E8EB;
   --accent:#336699;
-  --hope:#3e8ef7;
-  --myth:#ffb020;
-  --science:#7c5cfc;
-  --psych:#2d7ff9;
-  --power:#e14d72;
-  --reform:#12b886;
-  --close:#4cbd87;
+  --pend:#3e8ef7;
+  --cog:#2d7ff9;
+  --farm:#ffb020;
+  --uni:#12b886;
+  --sci:#7c5cfc;
+  --close:#e14d72;
 }
 @media (prefers-color-scheme: dark){
   :root{
@@ -56,32 +52,55 @@ h1{font-size:1.8rem;font-weight:600;line-height:1.25;letter-spacing:-0.02em;marg
 .byline{font-size:.9rem;color:var(--muted)}
 .byline strong{font-weight:500;color:var(--ink)}
 article{background:transparent}
+section+section{margin-top:2.5rem}
 h2{
   font-size:1.2rem;font-weight:600;line-height:1.4;
   margin:2rem 0 .75rem 0; padding-bottom:.5rem; border-bottom:1px solid var(--hair);
   text-align:left;
 }
 p{margin:0 0 1.25rem 0; font-size:1.05rem; text-wrap:pretty; text-align:left}
-ul{margin:0 0 1.25rem 1.2rem; padding:0}
-li{margin:0 0 .6rem 0}
-.hi{display:flex; align-items:center; gap:.6rem}
-.hi svg{width:24px; height:24px; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round}
-.iconHope{stroke:var(--hope)}
-.iconMyth{stroke:var(--myth)}
-.iconScience{stroke:var(--science)}
-.iconPsych{stroke:var(--psych)}
-.iconPower{stroke:var(--power)}
-.iconReform{stroke:var(--reform)}
-.iconClose{stroke:var(--close)}
+p:last-of-type{margin-bottom:0}
+.block{
+  background:var(--paper);
+  border:1px solid var(--hair);
+  border-radius:16px;
+  padding:20px;
+  display:flex; justify-content:center; align-items:center;
+  margin:1rem 0 1.25rem 0;
+  box-shadow:0 1px 2px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark){
+  .block{box-shadow:0 1px 2px rgba(0,0,0,.5)}
+}
+.block svg{
+  width:44px; height:44px; stroke-width:2; fill:none;
+  stroke-linecap:round; stroke-linejoin:round;
+}
+.iconPendahuluan{stroke:var(--pend)}
+.iconKognitif{stroke:var(--cog)}
+.iconPertanian{stroke:var(--farm)}
+.iconPenyatuan{stroke:var(--uni)}
+.iconIlmiah{stroke:var(--sci)}
+.iconPenutup{stroke:var(--close)}
 .buyLink{
-  display:flex; align-items:center; justify-content:center; gap:.5rem;
-  width:100%; padding:.9rem 1.2rem; margin-top:2rem;
-  background:var(--accent); color:#fff;
-  font-size:1rem; font-weight:500; text-decoration:none;
-  border-radius:10px; text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+  width:100%;
+  padding:.9rem 1.2rem;
+  background:var(--accent);
+  color:#fff;
+  font-size:1rem;
+  font-weight:500;
+  text-decoration:none;
+  border-radius:10px;
+  text-align:center;
   transition:transform .12s ease, background .25s ease;
 }
-.buyLink svg{width:22px; height:22px; stroke:#fff; stroke-width:2; fill:none}
+.buyLink svg{
+  width:22px; height:22px; stroke:#fff; stroke-width:2; fill:none;
+}
 .buyLink:hover{
   background:color-mix(in srgb, var(--accent) 85%, black 15%);
   transform:translateY(-1px);
@@ -90,6 +109,7 @@ li{margin:0 0 .6rem 0}
 @media print{
   body{font-size:12pt; background:#fff}
   .wrapper{padding:0}
+  .block{box-shadow:none}
 }
 </style>
 </head>
@@ -101,100 +121,111 @@ li{margin:0 0 .6rem 0}
   </header>
 
   <article role="article">
-    <h2 class="hi">
-      <svg class="iconHope" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" />
-      </svg>
-      Pendahuluan: Sebuah Gagasan Radikal
-    </h2>
-    <p>Buku ini diawali dengan pertanyaan yang menantang pandangan umum: bagaimana jika keyakinan bahwa manusia pada dasarnya egois, jahat, dan hanya memikirkan diri sendiri adalah keliru? Bregman mengajukan gagasan radikal yang menjadi inti buku ini: bahwa pada dasarnya, sebagian besar manusia itu baik.</p>
-    <p>Gagasan ini berlawanan dengan <em>teori veneer</em>, yakni anggapan bahwa peradaban hanyalah lapisan tipis yang menutupi sifat asli manusia yang brutal. Menurut teori ini, jika terjadi krisis—bencana alam atau perang—lapisan tersebut retak dan sifat buas muncul. Bregman berargumen sebaliknya. Dengan data sejarah, psikologi, dan arkeologi, ia menunjukkan bahwa justru saat krisis, sifat terbaik manusia—altruisme, kerja sama, dan solidaritas—muncul ke permukaan.</p>
-    <p>Ia juga memperkenalkan konsep “efek nocebo” sosial. Seperti plasebo yang menyembuhkan karena keyakinan positif, nocebo menimbulkan efek negatif karena keyakinan negatif. Pandangan sinis terhadap sesama bekerja seperti nocebo: jika kita menganggap orang lain tak bisa dipercaya, kita membangun sistem berbasis kecurigaan—di pemerintahan, perusahaan, sekolah—yang akhirnya mendorong perilaku egois. Buku ini adalah ajakan beralih ke “realisme baru” yang lebih berpengharapan.</p>
+    <section id="pendahuluan" aria-labelledby="p1">
+      <h2 id="p1">Pendahuluan</h2>
+      <div class="block" aria-hidden="true">
+        <svg class="iconPendahuluan" viewBox="0 0 24 24">
+          <path d="M2 4h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H2z" />
+          <path d="M22 4h-6a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7z" />
+        </svg>
+      </div>
+      <p><em>Humankind</em> menantang pandangan lama bahwa manusia pada dasarnya egois dan brutal. Gagasan pusatnya berani sekaligus sederhana: mayoritas manusia pada dasarnya baik.</p>
+      <p>Anggapan ini berhadapan dengan “teori veneer”, yang melihat peradaban sebagai lapisan tipis penutup sifat buas. Bregman menunjukkan, justru saat krisis, altruisme, kerja sama, dan solidaritas sering muncul.</p>
+      <p>Ia juga menyorot “efek nocebo” sosial: keyakinan sinis menular dan melahirkan institusi berbasis kecurigaan—di sekolah, perusahaan, pemerintahan—yang justru memicu perilaku egois. Buku ini mengajak beralih ke realisme baru yang penuh harapan.</p>
+    </section>
 
-    <p>Buku ini lalu membongkar mitos-mitos populer tentang “keburukan manusia”, menelaah sains tentang sifat dasar kita, mengkritik eksperimen psikologi klasik, dan merumuskan jalan praktis untuk merancang institusi berbasis kepercayaan.</p>
+    <section id="mitos" aria-labelledby="s1">
+      <h2 id="s1">1. Membongkar Mitos Terkenal</h2>
+      <div class="block" aria-hidden="true">
+        <svg class="iconKognitif" viewBox="0 0 24 24">
+          <path d="M8.5 8.5c0-2 1.6-3.5 3.5-3.5s3.5 1.5 3.5 3.5" />
+          <path d="M7 12a3 3 0 0 1 0-6 3 3 0 0 1 3 3v7a3 3 0 0 1-3 3 3 3 0 0 1 0-6" />
+          <path d="M17 12a3 3 0 0 0 0-6 3 3 0 0 0-3 3v7a3 3 0 0 0 3 3 3 3 0 0 0 0-6" />
+        </svg>
+      </div>
+      <p><strong>Kisah nyata “Lord of the Flies”.</strong> Enam anak Tonga terdampar di ‘Ata (1965) selama 15 bulan dan justru saling merawat: membagi jadwal, berkebun, menjaga api, dan menyelesaikan konflik dengan <em>time-out</em>. Antitesis total dari fiksi Golding.</p>
+      <p><strong>Mitos Pulau Paskah.</strong> Narasi populer tentang kehancuran diri karena keserakahan direvisi oleh bukti modern: keruntuhan dipicu kontak Eropa—penyakit dan perbudakan—sementara masyarakat setempat menunjukkan ketangguhan dan kecerdikan.</p>
+    </section>
 
-    <h2 class="hi">
-      <svg class="iconMyth" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7" />
-        <circle cx="12" cy="12" r="3" />
-        <path d="M3 3l18 18" />
-      </svg>
-      1) Membongkar Mitos Terkenal
-    </h2>
-    <p><strong>Kisah Nyata “Lord of the Flies”.</strong> Novel William Golding menggambarkan anak-anak yang terdampar menjadi buas. Bregman menemukan kisah nyata tahun 1965: enam anak laki-laki dari Tonga terdampar di pulau ’Ata selama 15 bulan. Alih-alih saling melukai, mereka justru bekerja sama: membuat jadwal kerja, membangun kebun, menjaga api agar menyala, dan menyelesaikan konflik dengan <em>time-out</em>. Kisah mereka adalah cerita tentang persahabatan dan ketahanan—antitesis dari fiksi Golding.</p>
-    <p><strong>Mitos Pembantaian di Pulau Paskah.</strong> Narasi populer menyebut peradaban Pulau Paskah hancur karena keserakahan: pohon ditebang demi patung Moai, lalu perang saudara dan kanibalisme. Bregman menunjukkan bukti ilmiah modern yang membantah narasi ini. Keruntuhan bukan akibat perang internal, melainkan kedatangan orang Eropa yang membawa penyakit mematikan dan perbudakan. Penduduk setempat justru menunjukkan ketangguhan dan kecerdikan.</p>
+    <section id="sains" aria-labelledby="s2">
+      <h2 id="s2">2. Sifat Dasar Manusia Menurut Sains</h2>
+      <div class="block" aria-hidden="true">
+        <svg class="iconIlmiah" viewBox="0 0 24 24">
+          <path d="M3 21l4-8" />
+          <path d="M7 13l6 8" />
+          <path d="M13 7l7-3-2 6-7 3 2-6z" />
+          <path d="M2 11l6 2" />
+        </svg>
+      </div>
+      <p><strong>Homo puppy.</strong> <em>Survival of the friendliest</em>: manusia berevolusi melalui “domestikasi diri”—lebih ramah dan kooperatif—yang membuat pembelajaran sosial dan kolaborasi skala besar menjadi keunggulan evolutif.</p>
+      <p><strong>Awal perang dan ketidaksetaraan.</strong> Titik balik terjadi saat menetap dan mengenal kepemilikan ~10.000 tahun lalu. Kepemilikan memicu hierarki; kecurigaan terhadap orang asing meningkat; perang muncul sebagai institusi historis, bukan naluri bawaan.</p>
+    </section>
 
-    <h2 class="hi">
-      <svg class="iconScience" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M10 2h4" />
-        <path d="M12 2v6l5 8a3 3 0 0 1-2.6 4H9.6A3 3 0 0 1 7 16l5-8" />
-      </svg>
-      2) Sifat Dasar Manusia Menurut Sains
-    </h2>
-    <p><strong>Homo Puppy.</strong> Mengapa <em>Homo sapiens</em> bertahan, bukan Neanderthal yang berotak lebih besar? Jawabannya: <em>survival of the friendliest</em>. Manusia mengalami “domestikasi diri”, mirip anjing dari serigala: lebih ramah, lebih sosial, wajah lebih juvenil—karena itu dijuluki “Homo puppy”. Kemampuan belajar sosial dan bekerja sama dalam kelompok besar adalah kekuatan super evolutif kita.</p>
-    <p><strong>Awal Mula Perang dan Ketidaksetaraan.</strong> Jika manusia purba relatif egaliter sebagai pemburu-pengumpul, mengapa kini banyak perang dan hierarki? Mengikuti jejak Rousseau, Bregman menempatkan titik balik saat manusia menetap dan mengenal kepemilikan pribadi sekitar 10.000 tahun lalu. Kepemilikan menciptakan ketidaksetaraan, dan kehidupan menetap memicu ketidakpercayaan pada orang asing. Perang bukan sifat bawaan, melainkan “penemuan” historis yang relatif baru.</p>
+    <section id="psikologi" aria-labelledby="s3">
+      <h2 id="s3">3. Mengulas Eksperimen Psikologi Terkenal</h2>
+      <div class="block" aria-hidden="true">
+        <svg class="iconIlmiah" viewBox="0 0 24 24">
+          <path d="M3 21l4-8" />
+          <path d="M7 13l6 8" />
+          <path d="M13 7l7-3-2 6-7 3 2-6z" />
+          <path d="M2 11l6 2" />
+        </svg>
+      </div>
+      <p><strong>Penjara Stanford.</strong> Perilaku “penjaga” dibentuk oleh instruksi dan dorongan peneliti; bukan bukti spontanitas sadisme. Replikasi BBC menunjukkan lintasan berbeda: peserta canggung, lalu membentuk komune damai.</p>
+      <p><strong>Setrum Milgram.</strong> Kepatuhan bukan buta; banyak peserta tertekan dan bertahan karena merasa “demi sains”. Saat perintah telanjang tanpa justifikasi moral, kepatuhan runtuh.</p>
+      <p><strong>Kasus Kitty Genovese.</strong> Mitos 38 saksi pasif dibantah; ada yang menolong dan menghubungi polisi. Riset modern: dalam darurat yang jelas, lebih banyak saksi justru meningkatkan peluang bantuan.</p>
+    </section>
 
-    <h2 class="hi">
-      <svg class="iconPsych" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M8 6a3 3 0 0 1 3-2 3 3 0 0 1 3 3v10a3 3 0 0 1-3 3 3 3 0 0 1-3-3z" />
-        <path d="M12 4v16" />
-        <path d="M8 10h8" />
-      </svg>
-      3) Membongkar Eksperimen Psikologi Paling Terkenal
-    </h2>
-    <p><strong>Eksperimen Penjara Stanford (Philip Zimbardo).</strong> Eksperimen ini sering dikutip untuk menunjukkan mahasiswa biasa bisa cepat menjadi sadis saat berperan sebagai penjaga. Bregman mengungkap bahwa “hasil” tersebut dimanipulasi: Zimbardo dan tim aktif mendorong perilaku kejam. Ini lebih tentang otoritas yang memanipulasi, bukan spontanitas situasi. Replikasi <em>BBC Prison Study</em> yang lebih etis justru menunjukkan peserta merasa canggung dan akhirnya membentuk komune damai.</p>
-    <p><strong>Eksperimen Setrum Milgram.</strong> Narasi populer menyebut orang patuh secara buta menyiksa orang lain atas perintah otoritas. Bregman menunjukkan interpretasi yang lebih akurat: peserta tidak patuh buta; mereka sangat tertekan dan melanjutkan karena percaya terlibat dalam proyek ilmiah penting. Ketika perintah diberikan secara gamblang tanpa justifikasi “demi sains”, kepatuhan hampir hilang.</p>
-    <p><strong>Kasus Kitty Genovese dan <em>Bystander Effect</em>.</strong> Kisah 38 saksi yang hanya diam adalah fabrikasi media. Faktanya, tidak ada 38 saksi pasif; beberapa orang menelepon polisi, dan Kitty meninggal dalam pelukan tetangga yang menolongnya. Riset modern bahkan menunjukkan kebalikannya: dalam situasi darurat yang jelas, semakin banyak saksi, semakin besar peluang seseorang akan dibantu.</p>
+    <section id="mengapa" aria-labelledby="s4">
+      <h2 id="s4">4. Mengapa Orang Baik Melakukan Hal Buruk?</h2>
+      <div class="block" aria-hidden="true">
+        <svg class="iconPenyatuan" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18" />
+          <path d="M12 3a14 14 0 0 1 0 18" />
+          <path d="M12 3a14 14 0 0 0 0 18" />
+        </svg>
+      </div>
+      <p><strong>Sisi gelap empati & jarak.</strong> Kekejaman sering lahir dari empati yang menyala untuk “kita” sambil membutakan diri pada “mereka”. Jarak fisik mempermudah kekerasan; mengebom dari ketinggian lebih mudah daripada kontak dekat.</p>
+      <p><strong>Paradoks kekuasaan.</strong> Kekuasaan mengikis empati dan kontrol diri; kita memilih pemimpin ramah, namun proses berkuasa bisa merusaknya—mendorong impulsif dan sinisme.</p>
+    </section>
 
-    <h2 class="hi">
-      <svg class="iconPower" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
-      </svg>
-      4) Mengapa Orang Baik Melakukan Hal Buruk?
-    </h2>
-    <p><strong>Sisi Gelap Empati dan Kekuatan Jarak.</strong> Kekejaman sering tidak lahir dari kebencian, melainkan empati yang salah arah. Empati bekerja seperti sorot lampu: sangat peduli pada “kita” sambil buta pada “mereka”. Di medan perang, tentara sering termotivasi oleh persahabatan (<em>kameradschaft</em>) ketimbang ideologi. Kekerasan juga lebih mudah dari jarak jauh—mengebom kota dari ketinggian lebih mudah daripada kontak dekat.</p>
-    <p><strong>Kekuasaan Merusak.</strong> Kekuasaan bekerja seperti obat bius yang merusak otak. Mereka yang berkuasa cenderung kehilangan empati, menjadi lebih impulsif, dan sinis. Ini disebut paradoks kekuasaan: kita memilih pemimpin yang ramah dan rendah hati, tetapi proses memegang kekuasaan merusak kualitas tersebut.</p>
+    <section id="realisme" aria-labelledby="s5">
+      <h2 id="s5">5. Jalan Menuju Realisme Baru</h2>
+      <div class="block" aria-hidden="true">
+        <svg class="iconPenyatuan" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18" />
+          <path d="M12 3a14 14 0 0 1 0 18" />
+          <path d="M12 3a14 14 0 0 0 0 18" />
+        </svg>
+      </div>
+      <p><strong>Institusi berbasis kepercayaan.</strong> Buurtzorg (tim perawat otonom), Sekolah Agora (kurikulum oleh siswa), dan anggaran partisipatif (warga mengelola sebagian anggaran) menunjukkan kinerja tinggi sekaligus memupuk kepercayaan publik.</p>
+      <p><strong>Kontak & perilaku non-komplementer.</strong> Interaksi lintas kelompok melunturkan prasangka; membalas kebencian dengan kebaikan memutus spiral kekerasan—terlihat pada Gencatan Senjata Natal 1914 dan model pemasyarakatan Norwegia yang humanis.</p>
+    </section>
 
-    <h2 class="hi">
-      <svg class="iconReform" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M3 12c4-8 14-8 18 0-4 8-14 8-18 0" />
-        <path d="M12 6v12" />
-      </svg>
-      5) Jalan Menuju Realisme Baru
-    </h2>
-    <p>Di bagian akhir, Bregman menawarkan solusi praktis yang bertolak dari pandangan positif terhadap manusia. Ia menampilkan contoh institusi yang berhasil karena dibangun di atas kepercayaan, bukan kecurigaan:</p>
-    <ul>
-      <li><strong>Buurtzorg</strong> di Belanda beroperasi tanpa manajer, memberi otonomi penuh pada perawat. Hasilnya: kepuasan karyawan dan pasien tinggi dengan biaya lebih rendah.</li>
-      <li><strong>Sekolah Agora</strong> membiarkan siswa merancang kurikulum berdasarkan rasa ingin tahu. Hasilnya: siswa termotivasi dan mandiri.</li>
-      <li><strong>Anggaran partisipatif</strong> di kota-kota seperti Porto Alegre (Brasil) memberi warga kendali langsung atas sebagian anggaran kota, menurunkan korupsi, memperbaiki layanan publik, dan meningkatkan kepercayaan terhadap pemerintah.</li>
-    </ul>
-    <p><strong>Kekuatan Kontak dan Perilaku Non-Komplementer.</strong> Obat mujarab untuk prasangka adalah kontak antarkelompok—seperti yang ditunjukkan kisah Nelson Mandela di Afrika Selatan. Perilaku non-komplementer—membalas kebencian dengan kebaikan—bukan naif, melainkan strategi efektif memutus siklus kekerasan, sebagaimana ditunjukkan sistem pemasyarakatan Norwegia yang berfokus pada kemanusiaan dan rehabilitasi. Gencatan Senjata Natal 1914—saat tentara Jerman dan Inggris keluar dari parit untuk merayakan Natal bersama—menjadi bukti bahwa bahkan di tengah perang, kemanusiaan bisa menang.</p>
+    <section id="penutup" aria-labelledby="p2">
+      <h2 id="p2">Penutup</h2>
+      <div class="block" aria-hidden="true">
+        <svg class="iconPenutup" viewBox="0 0 24 24">
+          <path d="M2 4h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H2z" />
+          <path d="M22 4h-6a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7z" />
+        </svg>
+      </div>
+      <p>Aturan praktis Bregman: bersangka baik pada orang lain, cari skenario menang-menang, kurangi konsumsi berita yang bias negatif, dan normalisasi kebaikan—karena ia menular. Realisme sejati bukan sinisme, melainkan keberanian percaya pada kebaikan manusia dengan dasar bukti.</p>
+      <p>Dengan mengubah asumsi dasar kita tentang sesama, kita bisa mendesain sekolah, bisnis, dan demokrasi yang lebih manusiawi—dan pada skala besar, mengubah dunia.</p>
+    </section>
 
-    <h2 class="hi">
-      <svg class="iconClose" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M8 12l2.5 2.5L16 9" />
-      </svg>
-      Penutup: Sepuluh Aturan untuk Hidup
-    </h2>
-    <p>Bregman menutup dengan sepuluh aturan hidup yang merangkum praksisnya. Intinya mendorong kita untuk:</p>
-    <ul>
-      <li>Saat ragu, berasumsilah yang terbaik dari orang lain.</li>
-      <li>Pikirkan skenario menang–menang.</li>
-      <li>Hindari konsumsi berita yang berlebihan karena bias negatifnya mendistorsi pandangan tentang dunia.</li>
-      <li>Jangan malu berbuat baik—kebaikan itu menular.</li>
-      <li>Yang terpenting: jadilah realistis. Realisme sejati bukan sinisme, melainkan keberanian percaya pada kebaikan sesama manusia, karena itulah yang didukung oleh banyak bukti.</li>
-    </ul>
-    <p>Pada akhirnya, <em>Humankind</em> adalah argumen penuh harapan bahwa dengan mengubah cara pandang kita terhadap sifat dasar manusia, kita dapat membangun dunia yang lebih baik, lebih adil, dan lebih manusiawi.</p>
-
-    <a href="https://s.shopee.co.id/40Woa6lj1k" class="buyLink" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="9" cy="21" r="1" />
-        <circle cx="20" cy="21" r="1" />
-        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-      </svg>
-      Beli Buku Aslinya
-    </a>
+    <div class="block">
+      <a href="https://s.shopee.co.id/40Woa6lj1k" class="buyLink" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+        </svg>
+        Beli Buku Aslinya
+      </a>
+    </div>
   </article>
 </div>
 </body>
