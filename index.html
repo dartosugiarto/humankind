@@ -59,7 +59,8 @@ h2{
   text-align:left;
 }
 p{margin:0 0 1.25rem 0; font-size:1.05rem; text-wrap:pretty; text-align:left}
-p:last-of-type{margin-bottom:0}
+ul{margin:0 0 1.25rem 1.2rem; padding:0}
+li{margin:0 0 .6rem 0}
 .block{
   background:var(--paper);
   border:1px solid var(--hair);
@@ -69,9 +70,7 @@ p:last-of-type{margin-bottom:0}
   margin:1rem 0 1.25rem 0;
   box-shadow:0 1px 2px rgba(0,0,0,.06);
 }
-@media (prefers-color-scheme: dark){
-  .block{box-shadow:0 1px 2px rgba(0,0,0,.5)}
-}
+@media (prefers-color-scheme: dark){.block{box-shadow:0 1px 2px rgba(0,0,0,.5)}}
 .block svg{
   width:44px; height:44px; stroke-width:2; fill:none;
   stroke-linecap:round; stroke-linejoin:round;
@@ -83,24 +82,14 @@ p:last-of-type{margin-bottom:0}
 .iconIlmiah{stroke:var(--sci)}
 .iconPenutup{stroke:var(--close)}
 .buyLink{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:.5rem;
-  width:100%;
-  padding:.9rem 1.2rem;
-  background:var(--accent);
-  color:#fff;
-  font-size:1rem;
-  font-weight:500;
-  text-decoration:none;
-  border-radius:10px;
-  text-align:center;
+  display:flex; align-items:center; justify-content:center; gap:.5rem;
+  width:100%; padding:.9rem 1.2rem;
+  background:var(--accent); color:#fff;
+  font-size:1rem; font-weight:500; text-decoration:none;
+  border-radius:10px; text-align:center;
   transition:transform .12s ease, background .25s ease;
 }
-.buyLink svg{
-  width:22px; height:22px; stroke:#fff; stroke-width:2; fill:none;
-}
+.buyLink svg{width:22px; height:22px; stroke:#fff; stroke-width:2; fill:none}
 .buyLink:hover{
   background:color-mix(in srgb, var(--accent) 85%, black 15%);
   transform:translateY(-1px);
@@ -124,96 +113,102 @@ p:last-of-type{margin-bottom:0}
     <section id="pendahuluan" aria-labelledby="p1">
       <h2 id="p1">Pendahuluan</h2>
       <div class="block" aria-hidden="true">
+        <!-- Ikon harapan/ide: matahari (unik) -->
         <svg class="iconPendahuluan" viewBox="0 0 24 24">
-          <path d="M2 4h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H2z" />
-          <path d="M22 4h-6a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7z" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+          <path d="M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" />
         </svg>
       </div>
-      <p><em>Humankind</em> menantang pandangan lama bahwa manusia pada dasarnya egois dan brutal. Gagasan pusatnya berani sekaligus sederhana: mayoritas manusia pada dasarnya baik.</p>
-      <p>Anggapan ini berhadapan dengan “teori veneer”, yang melihat peradaban sebagai lapisan tipis penutup sifat buas. Bregman menunjukkan, justru saat krisis, altruisme, kerja sama, dan solidaritas sering muncul.</p>
-      <p>Ia juga menyorot “efek nocebo” sosial: keyakinan sinis menular dan melahirkan institusi berbasis kecurigaan—di sekolah, perusahaan, pemerintahan—yang justru memicu perilaku egois. Buku ini mengajak beralih ke realisme baru yang penuh harapan.</p>
+      <p><em>Humankind</em> menantang pandangan bahwa manusia pada dasarnya egois dan brutal. Gagasan pusatnya berani sekaligus sederhana: mayoritas manusia pada dasarnya baik.</p>
+      <p>Ini berhadapan dengan “teori veneer” yang melihat peradaban sebagai lapisan tipis penutup sifat buas. Bregman menunjukkan, justru saat krisis, altruisme, kerja sama, dan solidaritas sering muncul.</p>
+      <p>Ia juga menyorot “efek nocebo” sosial: keyakinan sinis melahirkan institusi berbasis kecurigaan—di sekolah, perusahaan, pemerintahan—yang malah memicu perilaku egois. Buku ini mengajak beralih ke realisme baru yang penuh harapan.</p>
     </section>
 
     <section id="mitos" aria-labelledby="s1">
       <h2 id="s1">1. Membongkar Mitos Terkenal</h2>
       <div class="block" aria-hidden="true">
+        <!-- Ikon debunk: mata bersilang (unik) -->
         <svg class="iconKognitif" viewBox="0 0 24 24">
-          <path d="M8.5 8.5c0-2 1.6-3.5 3.5-3.5s3.5 1.5 3.5 3.5" />
-          <path d="M7 12a3 3 0 0 1 0-6 3 3 0 0 1 3 3v7a3 3 0 0 1-3 3 3 3 0 0 1 0-6" />
-          <path d="M17 12a3 3 0 0 0 0-6 3 3 0 0 0-3 3v7a3 3 0 0 0 3 3 3 3 0 0 0 0-6" />
+          <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7" />
+          <circle cx="12" cy="12" r="3" />
+          <path d="M3 3l18 18" />
         </svg>
       </div>
-      <p><strong>Kisah nyata “Lord of the Flies”.</strong> Enam anak Tonga terdampar di ‘Ata (1965) selama 15 bulan dan justru saling merawat: membagi jadwal, berkebun, menjaga api, dan menyelesaikan konflik dengan <em>time-out</em>. Antitesis total dari fiksi Golding.</p>
-      <p><strong>Mitos Pulau Paskah.</strong> Narasi populer tentang kehancuran diri karena keserakahan direvisi oleh bukti modern: keruntuhan dipicu kontak Eropa—penyakit dan perbudakan—sementara masyarakat setempat menunjukkan ketangguhan dan kecerdikan.</p>
+      <p><strong>Kisah nyata “Lord of the Flies”.</strong> Enam anak Tonga terdampar di ‘Ata (1965) selama 15 bulan dan justru saling merawat: berbagi jadwal, berkebun, menjaga api, menyelesaikan konflik dengan <em>time-out</em>. Antitesis dari fiksi Golding.</p>
+      <p><strong>Mitos Pulau Paskah.</strong> Narasi kehancuran diri direvisi oleh bukti modern: keruntuhan dipicu kontak Eropa (penyakit, perbudakan), sementara masyarakat setempat menunjukkan ketangguhan dan kecerdikan.</p>
     </section>
 
     <section id="sains" aria-labelledby="s2">
       <h2 id="s2">2. Sifat Dasar Manusia Menurut Sains</h2>
       <div class="block" aria-hidden="true">
+        <!-- Ikon sains: lab flask (unik) -->
         <svg class="iconIlmiah" viewBox="0 0 24 24">
-          <path d="M3 21l4-8" />
-          <path d="M7 13l6 8" />
-          <path d="M13 7l7-3-2 6-7 3 2-6z" />
-          <path d="M2 11l6 2" />
+          <path d="M10 2h4" />
+          <path d="M12 2v6l5 8a3 3 0 0 1-2.6 4H9.6A3 3 0 0 1 7 16l5-8" />
         </svg>
       </div>
-      <p><strong>Homo puppy.</strong> <em>Survival of the friendliest</em>: manusia berevolusi melalui “domestikasi diri”—lebih ramah dan kooperatif—yang membuat pembelajaran sosial dan kolaborasi skala besar menjadi keunggulan evolutif.</p>
-      <p><strong>Awal perang dan ketidaksetaraan.</strong> Titik balik terjadi saat menetap dan mengenal kepemilikan ~10.000 tahun lalu. Kepemilikan memicu hierarki; kecurigaan terhadap orang asing meningkat; perang muncul sebagai institusi historis, bukan naluri bawaan.</p>
+      <p><strong>Homo puppy.</strong> <em>Survival of the friendliest</em>: manusia mengalami “domestikasi diri”—lebih ramah dan kooperatif—sehingga pembelajaran sosial dan kolaborasi skala besar menjadi keunggulan evolutif.</p>
+      <p><strong>Awal perang dan ketidaksetaraan.</strong> Titik balik saat menetap dan mengenal kepemilikan ~10.000 tahun lalu. Kepemilikan memicu hierarki; kecurigaan terhadap orang asing meningkat; perang muncul sebagai institusi historis, bukan naluri bawaan.</p>
     </section>
 
     <section id="psikologi" aria-labelledby="s3">
       <h2 id="s3">3. Mengulas Eksperimen Psikologi Terkenal</h2>
       <div class="block" aria-hidden="true">
-        <svg class="iconIlmiah" viewBox="0 0 24 24">
-          <path d="M3 21l4-8" />
-          <path d="M7 13l6 8" />
-          <path d="M13 7l7-3-2 6-7 3 2-6z" />
-          <path d="M2 11l6 2" />
+        <!-- Ikon psikologi: huruf Psi (unik) -->
+        <svg class="iconPertanian" viewBox="0 0 24 24">
+          <path d="M8 6a3 3 0 0 1 3-2 3 3 0 0 1 3 3v10a3 3 0 0 1-3 3 3 3 0 0 1-3-3z" />
+          <path d="M12 4v16" />
+          <path d="M8 10h8" />
         </svg>
       </div>
-      <p><strong>Penjara Stanford.</strong> Perilaku “penjaga” dibentuk oleh instruksi dan dorongan peneliti; bukan bukti spontanitas sadisme. Replikasi BBC menunjukkan lintasan berbeda: peserta canggung, lalu membentuk komune damai.</p>
-      <p><strong>Setrum Milgram.</strong> Kepatuhan bukan buta; banyak peserta tertekan dan bertahan karena merasa “demi sains”. Saat perintah telanjang tanpa justifikasi moral, kepatuhan runtuh.</p>
+      <p><strong>Penjara Stanford.</strong> Perilaku “penjaga” dibentuk oleh dorongan peneliti—bukan bukti spontanitas sadisme. Replikasi BBC menunjukkan lintasan berbeda: peserta canggung, lalu membentuk komune damai.</p>
+      <p><strong>Setrum Milgram.</strong> Kepatuhan bukan buta; peserta tertekan dan bertahan karena narasi “demi sains”. Saat perintah telanjang tanpa justifikasi moral, kepatuhan runtuh.</p>
       <p><strong>Kasus Kitty Genovese.</strong> Mitos 38 saksi pasif dibantah; ada yang menolong dan menghubungi polisi. Riset modern: dalam darurat yang jelas, lebih banyak saksi justru meningkatkan peluang bantuan.</p>
     </section>
 
     <section id="mengapa" aria-labelledby="s4">
       <h2 id="s4">4. Mengapa Orang Baik Melakukan Hal Buruk?</h2>
       <div class="block" aria-hidden="true">
+        <!-- Ikon moral/kuasa: timbangan (unik) -->
         <svg class="iconPenyatuan" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="9" />
-          <path d="M3 12h18" />
-          <path d="M12 3a14 14 0 0 1 0 18" />
-          <path d="M12 3a14 14 0 0 0 0 18" />
+          <path d="M12 3v3" />
+          <path d="M6 7h12" />
+          <path d="M12 10v11" />
+          <path d="M8 21h8" />
+          <path d="M6 7l-3 6h6z" />
+          <path d="M18 7l-3 6h6z" />
         </svg>
       </div>
-      <p><strong>Sisi gelap empati & jarak.</strong> Kekejaman sering lahir dari empati yang menyala untuk “kita” sambil membutakan diri pada “mereka”. Jarak fisik mempermudah kekerasan; mengebom dari ketinggian lebih mudah daripada kontak dekat.</p>
+      <p><strong>Sisi gelap empati & jarak.</strong> Empati seperti sorot lampu: peduli pada “kita”, buta pada “mereka”. Jarak fisik mempermudah kekerasan; mengebom dari ketinggian lebih mudah daripada kontak dekat.</p>
       <p><strong>Paradoks kekuasaan.</strong> Kekuasaan mengikis empati dan kontrol diri; kita memilih pemimpin ramah, namun proses berkuasa bisa merusaknya—mendorong impulsif dan sinisme.</p>
     </section>
 
     <section id="realisme" aria-labelledby="s5">
       <h2 id="s5">5. Jalan Menuju Realisme Baru</h2>
       <div class="block" aria-hidden="true">
-        <svg class="iconPenyatuan" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="9" />
-          <path d="M3 12h18" />
-          <path d="M12 3a14 14 0 0 1 0 18" />
-          <path d="M12 3a14 14 0 0 0 0 18" />
+        <!-- Ikon reformasi/harap: tunas tumbuh (unik) -->
+        <svg class="iconIlmiah" viewBox="0 0 24 24">
+          <path d="M12 20V12" />
+          <path d="M12 12c-3 0-6-2-6-6 4 0 6 2 6 6" />
+          <path d="M12 12c3 0 6-2 6-6-4 0-6 2-6 6" />
         </svg>
       </div>
-      <p><strong>Institusi berbasis kepercayaan.</strong> Buurtzorg (tim perawat otonom), Sekolah Agora (kurikulum oleh siswa), dan anggaran partisipatif (warga mengelola sebagian anggaran) menunjukkan kinerja tinggi sekaligus memupuk kepercayaan publik.</p>
+      <p><strong>Institusi berbasis kepercayaan.</strong> Buurtzorg (tim perawat otonom), Sekolah Agora (kurikulum oleh siswa), dan anggaran partisipatif menunjukkan kinerja tinggi sekaligus menumbuhkan kepercayaan publik.</p>
       <p><strong>Kontak & perilaku non-komplementer.</strong> Interaksi lintas kelompok melunturkan prasangka; membalas kebencian dengan kebaikan memutus spiral kekerasan—terlihat pada Gencatan Senjata Natal 1914 dan model pemasyarakatan Norwegia yang humanis.</p>
     </section>
 
     <section id="penutup" aria-labelledby="p2">
       <h2 id="p2">Penutup</h2>
       <div class="block" aria-hidden="true">
+        <!-- Ikon kesimpulan: centang dalam lingkaran (unik) -->
         <svg class="iconPenutup" viewBox="0 0 24 24">
-          <path d="M2 4h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H2z" />
-          <path d="M22 4h-6a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7z" />
+          <circle cx="12" cy="12" r="9" />
+          <path d="M8 12l3 3 5-5" />
         </svg>
       </div>
-      <p>Aturan praktis Bregman: bersangka baik pada orang lain, cari skenario menang-menang, kurangi konsumsi berita yang bias negatif, dan normalisasi kebaikan—karena ia menular. Realisme sejati bukan sinisme, melainkan keberanian percaya pada kebaikan manusia dengan dasar bukti.</p>
-      <p>Dengan mengubah asumsi dasar kita tentang sesama, kita bisa mendesain sekolah, bisnis, dan demokrasi yang lebih manusiawi—dan pada skala besar, mengubah dunia.</p>
+      <p>Aturan praktis Bregman: bersangka baik pada orang lain, cari skenario menang–menang, kurangi konsumsi berita yang bias negatif, dan normalisasi kebaikan—karena ia menular. Realisme sejati bukan sinisme, melainkan keberanian percaya pada kebaikan manusia dengan dasar bukti.</p>
+      <p>Pada akhirnya, mengubah asumsi dasar kita tentang sesama membuka jalan untuk mendesain sekolah, bisnis, dan demokrasi yang lebih manusiawi—dan pada skala besar, mengubah dunia.</p>
     </section>
 
     <div class="block">
